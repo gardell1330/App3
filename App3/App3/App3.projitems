@@ -10,6 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISqlite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainMenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserDb.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Users.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />

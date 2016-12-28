@@ -9,20 +9,24 @@ namespace App3
 {
 	public class App : Application
 	{
-		public App ()
+        private static UserDb db;
+        public static UserDb DB
+        {
+            get
+            {
+                if (db == null)
+                {
+                    db = new UserDb();
+                }
+                return db;
+            }
+        } 
+
+        public App ()
 		{
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+            // The root page of your application
+            db = new UserDb();
+            MainPage = new NavigationPage(new LoginPage());			
 		}
 
 		protected override void OnStart ()
