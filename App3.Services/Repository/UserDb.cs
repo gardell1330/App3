@@ -3,8 +3,9 @@ using SQLitePCL;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
+using App3.Models;
 
-namespace App3
+namespace App3.Repository
 {
     public class UserDb
     {

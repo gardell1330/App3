@@ -1,7 +1,7 @@
-﻿using App3.Services.Models;
+﻿using App3.Models;
 using System;
 
-namespace App3.Shared
+namespace App3.ViewModels
 {
     class LoginPageViewModel
     {

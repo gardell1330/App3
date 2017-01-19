@@ -1,9 +1,10 @@
-﻿using App3.Services.Models;
+﻿using App3.Models;
+using App3.ViewModels;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace App3.Shared
+namespace App3.Views
 {
     public class LoginPage : ContentPage
     {

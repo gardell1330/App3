@@ -157,7 +157,12 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
-  <Import Project="..\App3\App3.projitems" Label="Shared" Condition="Exists('..\App3\App3.projitems')" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\App3.Services\App3.csproj">
+      <Project>{67F9D3A8-F71E-4428-913F-C37AE82CDB24}</Project>
+      <Name>App3</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

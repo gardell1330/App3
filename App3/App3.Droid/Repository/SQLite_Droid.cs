@@ -3,9 +3,10 @@ using System;
 using App3;
 using SQLite;
 using System.IO;
+using App3.Droid.Repository;
 
 [assembly: Xamarin.Forms.Dependency(typeof(SQLite_Droid))]
-namespace App3
+namespace App3.Droid.Repository
 {
     public class SQLite_Droid : ISqlite
     {

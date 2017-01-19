@@ -1,7 +1,7 @@
 ﻿using SQLite;
 using System;
 
-namespace App3
+namespace App3.Models
 {
     public class Users
     {

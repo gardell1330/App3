@@ -1,4 +1,5 @@
-﻿using App3.Services.Repository;
+﻿using App3.Repository;
+using App3.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace App3.Shared
+namespace App3
 {
 	public class App : Application
 	{
